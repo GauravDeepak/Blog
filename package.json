@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GauravDeepak/Blog/issues"
   },
-  "homepage": "https://github.com/GauravDeepak/Blog#readme"
+  "homepage": "https://github.com/GauravDeepak/Blog#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
