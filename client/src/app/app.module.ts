@@ -1,10 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/Router';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+
 import { AppComponent } from './app.component';
 import { LoveblogComponent } from './loveblog/loveblog.component';
 import { AddictionComponent } from './addiction/addiction.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +19,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path:'loveBlog',
