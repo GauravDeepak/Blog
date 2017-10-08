@@ -13,6 +13,9 @@ export class AddictionComponent implements OnInit {
   post:Post;
   name:string;
   content:string;
+  like= 0;
+  unlike = 0;
+  date=new Date;
 
   constructor(private postService: PostService) { }
 
@@ -22,13 +25,16 @@ export class AddictionComponent implements OnInit {
   addPost(){
    const post = {
      name:this.name,
-     content:this.content
+     content:this.content,
+     like:this.like,
+     unlike:this.unlike,
+     date:new Date
    }
    this.postService.addPost(post)
    .subscribe(post =>{
 
    })
-   console.log("name "+this.name)
+   console.log("name "+this.name+" date"+new Date)
    this.name=null;
    this.content=null;
   

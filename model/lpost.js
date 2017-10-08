@@ -10,11 +10,17 @@ const LPostSchema = mongoose.Schema({
     },
     like: {
         type: String,
+        default: 0
     },
     unlike: {
-        type: String
+        type: String,
+        default:0
+    },
+    time: {
+        type: Date,
+        default: Date.now
     }
-},{
-    collection:'blog'
-});
+}, {
+        collection: 'blog'
+    });
 const Post = module.exports = mongoose.model('Post', LPostSchema);

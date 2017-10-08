@@ -15,7 +15,8 @@ router.post('/post', (req, res) => {
         name: req.body.name,
         content: req.body.content,
         like: req.body.like,
-        unlike: req.body.unlike
+        unlike: req.body.unlike,
+        date: req.body.date
     })
     post.save((err, post) => {
         if (err) {
