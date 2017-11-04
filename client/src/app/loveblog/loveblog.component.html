@@ -8,7 +8,10 @@
         {{post.content}}
     </div>
     <div class="control" >
-        <button value="like">{{post.like}}</button><button value="like">{{post.unlike}}</button><button>{{post.date}}</button>
+         <button value="like" (click) = "UpdatePost(post._id)"> Like</button> <span>{{post.like}}</span>
+         <button value="unlike">Unlike</button> <span>{{post.unlike}}</span>
+         <input type="text" name="commnet" placeholder="type your comment here...."/>
+         <button id="submit">Submit</button>
     </div>
 </div>
 

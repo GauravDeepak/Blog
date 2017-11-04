@@ -6,8 +6,8 @@ var path = require('path');
 var port = 3001;
 
 var mongoose = require('mongoose');
-var promise = mongoose.connect('mongodb://localhost:27017/demo', {
-    useMongoClient: true,
+var promise = mongoose.connect('mongodb://localhost:27017/demo',(err,db) => {
+    useMongoClient: true
     /* other options */
 });
 var post = require('./admin/lPost');

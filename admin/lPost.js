@@ -30,4 +30,18 @@ router.post('/post', (req, res) => {
         }
     });
 });
+router.post('/update',(req,res) =>{
+/*
+    Post.update({ _id: "59fd695fcb431435b074f849"},{$inc:{like:+1}},(err,result)=>{
+        if(err){
+            throw err;
+        }else{
+            console.log('hello')
+        }
+    })
+*/
+    console.log("hjkdhkshdkhd-------------------")
+
+   
+})
 module.exports = router;

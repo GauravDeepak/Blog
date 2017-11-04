@@ -155,19 +155,57 @@ router-outlet{
     height: 340px;
 }
 .blog .blog_item .control{
-    padding: 20px;
+    padding-left:50px;
+
+}
+.blog .blog_item .control #submit{
+    width: 100px;
+    height: 45px;
+    border:none;
+    background-color: rgb(165, 178, 179);
+    border-radius: 2px;
+    margin-left: 10px;
+    color:white;
+    font-size: 20px;
+    box-shadow: none;
+}
+.blog .blog_item .control #submit:focus{
+    background-color: grey;
+}
+.blog .blog_item .control #submit:active{
+    background-color: green;
+}
+.blog .blog_item .control span{
+    margin-left: 20px;
 }
 .blog .blog_item .control button{
     width: 50px;
-    margin-left: 20px;
     height: 50px;
-    margin:0 aoto;
+    margin:0 auto;
     border:none;
-    background-color: #D3D0CA;
+    background-color: rgba(211, 208, 202, 0.788);
     border-radius: 50%;
     box-shadow: 1px 1px 10px 1px #995050;
     color:#868678;
 }
+.blog .blog_item .control button:active{
+    box-shadow: 1px 1px 10px 1px rgb(66, 83, 66);
+    border:none;
+    outline: none;
+}
+.blog .blog_item .control button:focus{
+    outline: none;
+}
+.blog .blog_item .control input{
+    border:1px solid orange;
+    width:300px;
+    height: 40px;
+    border-radius: 2px;
+    padding-left:10px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
 /* for adding the blog */
 
 .addBlog{

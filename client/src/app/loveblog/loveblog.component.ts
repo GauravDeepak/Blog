@@ -13,15 +13,21 @@ export class LoveblogComponent implements OnInit {
   post:Post;
   name:string;
   content:string;
-  like:string;
-  unlike:string;
+  like:number;
+  unlike:number;
   date:Date
   constructor(private postService: PostService) { }
 
   ngOnInit() {
      this.postService.getPost()
     .subscribe(posts =>
-    this.posts = posts)
+    this.posts = posts
+  )
   }
+  UpdatePost(id){
+    this.postService.updateLike(id)
+    .subscribe(posts => {
 
+    })
+  }
 }

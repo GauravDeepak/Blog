@@ -19,4 +19,10 @@ export class PostService {
         return this.http.post('http://localhost:3001/api/post',newPost,{headers:headers})
         .map(res => res.json());
     }
+    updateLike(id) {
+        var headers = new Headers();
+        headers.append('content-type','Application/json');
+        return this.http.post('http://localhost:3001/api/update',id,{headers:headers})
+        .map(res => res.json());
+    }
 }

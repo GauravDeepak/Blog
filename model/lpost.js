@@ -9,11 +9,11 @@ const LPostSchema = mongoose.Schema({
         required: true
     },
     like: {
-        type: String,
+        type: Number,
         default: 0
     },
     unlike: {
-        type: String,
+        type: Number,
         default:0
     },
     time: {

@@ -34,7 +34,7 @@ export class AddictionComponent implements OnInit {
    .subscribe(post =>{
 
    })
-   console.log("name "+this.name+" date"+new Date)
+   
    this.name=null;
    this.content=null;
   
